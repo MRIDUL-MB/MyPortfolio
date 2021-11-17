@@ -1,7 +1,8 @@
+import NavbarComponent from './components/Navbar';
 import './App.css';
 
 function App() {
-  return <h1>It's starting of my React Project</h1>;
+  return <NavbarComponent />;
 }
 
 export default App;
