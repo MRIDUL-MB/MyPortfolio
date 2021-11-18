@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  display: inline;
+  bottom: 0;
+  right: 0;
+  height: 40vh;
+  width: 55vw;
+  border-radius: 100% 0 0 0;
+}
+
+.toggle-btn {
+  padding: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.nav-links {
+  position: relative;
+  top: 3rem;
+}
+
+.nav-links ul {
+  text-align: end;
+  padding-right: 1rem;
+}
+
+.nav-links ul li {
+  padding: 1rem;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-solid {
+  font-size: 2rem;
+  color: white;
+}
+/*# sourceMappingURL=main.min.css.map */
