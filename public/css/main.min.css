@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: roboto, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -134,8 +134,8 @@ body {
 }
 
 .card-container:hover {
-  -webkit-box-shadow: 0 0 10px grey;
-          box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px #2781c0;
+          box-shadow: 0 0 10px #2781c0;
   -webkit-transform: scale(1.01, 1.01);
           transform: scale(1.01, 1.01);
   -webkit-transition: -webkit-transform 500ms ease 0s;
@@ -156,12 +156,7 @@ body {
   height: 12rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-}
-
-@media screen and (max-width: 576px) {
-  .card-container img {
-    border: 1px solid;
-  }
+  border: 1px solid #2781c0;
 }
 
 .card-container a {
@@ -210,6 +205,7 @@ body {
   text-align: center;
   margin-top: -2rem;
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 576px) {

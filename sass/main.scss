@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: roboto, sans-serif;
+    font-family: "Open Sans", sans-serif;
     // border: 1px solid;
 }
 
@@ -159,7 +159,7 @@ body {
     background-color: #daedfb;
 
     &:hover {
-        box-shadow: 0 0 10px grey;
+        box-shadow: 0 0 10px #2781c0;
         transform: scale(1.01, 1.01);
         transition: transform 500ms ease 0s;
     }
@@ -175,10 +175,7 @@ body {
         height: 12rem;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-
-        @include mq-max(576px) {
-            border: 1px solid;
-        }
+        border: 1px solid #2781c0;
 
     }
 
@@ -218,6 +215,7 @@ body {
         text-align: center;
         margin-top: -2rem;
         font-size: 1.5rem;
+        letter-spacing: 2px;
 
         @include mq-max(576px) {
             font-size: 1.5rem;

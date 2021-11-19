@@ -11,7 +11,7 @@ export default function Card(props) {
           <i className='fa-solid fa-share-from-square '></i>
         </a>
       </div>
-      <h2 className='card-title'>{title}</h2>
+      <p className='card-title'>{title}</p>
       <div className='skills'>{skillElement}</div>
       <div className='card-footer'>
         <a href={github}>Github</a>
