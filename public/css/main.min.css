@@ -128,14 +128,14 @@ body {
 .card-container {
   height: 25rem;
   width: 22rem;
-  background-color: white;
+  background-color: #b4dffe;
   border-radius: 1rem;
-  background-color: #daedfb;
+  overflow: hidden;
 }
 
 .card-container:hover {
-  -webkit-box-shadow: 0 0 10px #2781c0;
-          box-shadow: 0 0 10px #2781c0;
+  -webkit-box-shadow: 0 10px 10px grey;
+          box-shadow: 0 10px 10px grey;
   -webkit-transform: scale(1.01, 1.01);
           transform: scale(1.01, 1.01);
   -webkit-transition: -webkit-transform 500ms ease 0s;
@@ -146,17 +146,17 @@ body {
 
 @media screen and (max-width: 576px) {
   .card-container {
-    height: 24rem;
+    height: 24.5rem;
     width: 18rem;
   }
 }
 
 .card-container img {
-  width: 100%;
-  height: 12rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border: 1px solid #2781c0;
+  display: block;
+  margin: 1rem auto;
+  margin-bottom: auto;
+  width: 90%;
+  height: 10rem;
 }
 
 .card-container a {
@@ -167,7 +167,6 @@ body {
   font-size: 1.5rem;
   -webkit-transform: translateY(-56%);
           transform: translateY(-56%);
-  border: 10px solid #daedfb;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
@@ -195,7 +194,6 @@ body {
 @media screen and (max-width: 576px) {
   .card-container i {
     font-size: 1.5rem;
-    border: 8px solid #daedfb;
     width: 4rem;
     height: 4rem;
   }
@@ -226,8 +224,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .card-container .skills {
-    margin: 0 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -250,15 +247,19 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #b4dffe;
-  margin-top: 1.4rem;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  background-color: #2781c0;
+  margin-top: 3.5rem;
 }
 
 .card-container .card-footer a {
-  padding: 0.75rem;
+  padding: 0.7rem;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .card-container .card-footer a {
+    padding: 0.6rem;
+  }
 }
 /*# sourceMappingURL=main.min.css.map */
