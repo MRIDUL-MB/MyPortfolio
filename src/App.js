@@ -10,8 +10,11 @@ function App() {
     <div>
       <Navbar />
       <Banner />
-      <About />
-      <div>
+      <div id='about'>
+        <h2 className='project-title'>About</h2>
+        <About />
+      </div>
+      <div id='projects'>
         <h2 className='project-title'>Projects</h2>
         <section className='card-frame'>
           {dataList.map((data) => (

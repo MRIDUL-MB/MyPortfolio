@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 
-
+$p-color: #0592f4;
 
 
 * {
@@ -12,8 +12,8 @@
 }
 
 body {
-    // height: 100vh;
     background-color: rgb(255, 251, 251);
+    background-color: $p-color;
 }
 
 //functions
@@ -36,18 +36,17 @@ body {
 
 //Navbar
 
-@include mq-min(576px) {
+@include mq-min(577px) {
     .toggle {
         display: none;
     }
 
     .nav-links {
-        height: 4rem;
+        height: 6rem;
         width: 100%;
         display: flex !important;
         justify-content: center;
         background-color: #daedfb;
-        // box-shadow: 0 0 7px grey;
 
         ul {
             display: flex;
@@ -59,9 +58,9 @@ body {
                 list-style: none;
 
                 a {
-                    color: black;
+                    color: $p-color;
                     text-decoration: none;
-                    font-size: 1.25rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
                 }
             }
@@ -70,70 +69,100 @@ body {
 }
 
 @include mq-max(576px) {
-    nav {
-        position: fixed;
-        display: inline;
-        bottom: 0;
-        right: 0;
-        height: 40vh;
-        width: 70vw;
-        border-radius: 100% 0 0 0;
-        z-index: 100;
-        transition: all 0.5s ease-in-out 0s;
-    }
+
+
 
     .toggle-btn {
-        padding: 1rem;
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        background-color: black;
-        border-radius: 50%;
+
+        margin-right: 0;
+        font-size: 2rem;
+        position: fixed;
+        right: 0;
+        z-index: 100;
+
+        i {
+            padding: 1rem;
+
+        }
     }
 
     .nav-links {
-        position: relative;
-        top: 3rem;
+        position: fixed;
+        padding: 4rem 2rem;
+        background: #daedfb;
+        width: 100%;
+        z-index: 99;
+        transform: scale(0);
+        transition: all 0.4s ease 0s;
+
 
         ul {
-            text-align: end;
-            padding-right: 1rem;
-
             li {
-                padding: 1rem;
                 list-style: none;
+                padding: 1rem 0.5rem;
+                text-align: center;
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: $p-color;
+                    font-size: 2rem;
                 }
             }
         }
     }
-
-    .navbar-icon {
-        font-size: 1.5rem;
-        color: white;
-    }
-
 }
 
 // Banner
 
 .banner {
-    height: 20rem;
-    background-image: url("../assests/Asset3.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
+    border: 1rem solid #daedfb;
+    padding: 3rem;
+    padding-top: 7rem;
     background-color: #daedfb;
+    height: 20rem;
+    text-align: center;
+
+    @include mq-min(976px) {
+        text-align: start;
+        background-image: url("../assests/Asset3.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5rem;
+        padding-left: 3rem;
+    }
+}
+
+.banner-heading {
+    display: block;
+    margin: auto;
+    color: $p-color;
+
+
+    h1 {
+        font-size: 4rem;
+
+        @include mq-max(576px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+
+        @include mq-max(576px) {
+            font-size: 1rem;
+        }
+    }
 }
 
 // Card
 .project-title {
+    font-size: 3rem;
     text-align: center;
     margin: 5rem auto 3rem auto;
     text-decoration: underline;
+    color: white;
 }
 
 .card-frame {
@@ -268,4 +297,24 @@ body {
         }
     }
 
+}
+
+// About
+.about {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    background-color: #daedfb;
+
+    p {
+        width: 50%;
+        margin: auto;
+        color: #0592f4;
+
+        @include mq-max(576px) {
+            font-size: 1rem;
+            width: 80%;
+        }
+    }
 }
