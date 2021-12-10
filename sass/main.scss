@@ -12,7 +12,6 @@ $p-color: #0592f4;
 }
 
 body {
-    background-color: rgb(255, 251, 251);
     background-color: $p-color;
 }
 
@@ -79,6 +78,7 @@ body {
         position: fixed;
         right: 0;
         z-index: 100;
+        color: #2aa2f6;
 
         i {
             padding: 1rem;
@@ -119,7 +119,7 @@ body {
     padding: 3rem;
     padding-top: 7rem;
     background-color: #daedfb;
-    height: 20rem;
+    height: 23rem;
     text-align: center;
 
     @include mq-min(976px) {
@@ -129,7 +129,8 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         padding: 5rem;
-        padding-left: 3rem;
+
+
     }
 }
 
@@ -154,13 +155,43 @@ body {
             font-size: 1rem;
         }
     }
+
+    .button {
+        margin-top: 3rem;
+
+        .hire {
+            border: 5px solid $p-color;
+            color: $p-color;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @include mq-max(976px) {
+            margin-top: 3rem;
+        }
+
+        @include mq-max(576px) {
+
+            .hire {
+                border-width: 2px;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
 }
 
 // Card
+.card {
+    background-color: black;
+}
+
 .project-title {
     font-size: 3rem;
     text-align: center;
-    margin: 5rem auto 3rem auto;
+    margin: 3rem auto;
     text-decoration: underline;
     color: white;
 }
@@ -172,6 +203,7 @@ body {
     flex-wrap: wrap;
     row-gap: 5rem;
 
+
     @include mq-max(576px) {
         margin: 4rem auto;
         justify-content: center;
@@ -181,21 +213,22 @@ body {
 }
 
 .card-container {
-    height: 25rem;
+    height: 26rem;
     width: 22rem;
     background-color: #b4dffe;
     border-radius: 1rem;
     overflow: hidden;
+    border: 10px solid white;
 
 
     &:hover {
-        box-shadow: 0 10px 10px grey;
-        transform: scale(1.01, 1.01);
+        // box-shadow: 0 5px 10px white;
+        transform: scale(1.02, 1.02);
         transition: transform 500ms ease 0s;
     }
 
     @include mq-max(576px) {
-        height: 24.5rem;
+        height: 26rem;
         width: 18rem;
     }
 
@@ -206,7 +239,7 @@ body {
         margin-bottom: auto;
         width: 90%;
         height: 10rem;
-
+        border: 5px solid #0592f4;
 
     }
 
@@ -283,13 +316,21 @@ body {
     .card-footer {
         display: flex;
         justify-content: space-around;
-        background-color: #2781c0;
-        margin-top: 3.5rem;
+        // background-color: #2781c0;
+        margin-top: 3rem;
 
         a {
             padding: 0.7rem;
             text-decoration: none;
-            color: white;
+            color: #0592f4;
+            font-weight: 600;
+            font-size: 1.25rem;
+            ;
+
+            &:hover {
+                // color: #dae2ec;
+                color: black;
+            }
 
             @include mq-max(576px) {
                 padding: 0.6rem;
@@ -303,18 +344,140 @@ body {
 .about {
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-    background-color: #daedfb;
+    padding-bottom: 5rem;
+    // background-color: #daedfb;
 
     p {
         width: 50%;
         margin: auto;
-        color: #0592f4;
+        // color: #0592f4;
+        color: white;
 
         @include mq-max(576px) {
             font-size: 1rem;
             width: 80%;
         }
     }
+
+    h1 {
+        color: white;
+        ;
+    }
+}
+
+// skills
+#skills-frame {
+    padding: 2rem 0;
+
+}
+
+
+.skills-container {
+    // backdrop-filter: blur(3.5px);
+    background: rgba(255, 255, 255, 0.150);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    display: block;
+    margin: 0 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1rem;
+    padding: 2rem;
+
+
+
+    &:hover {
+        transform: scale(1.01, 1.01);
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3),
+            -5px -5px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
+
+    img {
+        margin: auto;
+        width: 30%;
+
+    }
+
+    @include mq-max(976px) {
+        margin: 0 5rem;
+
+        img {
+            width: 40%;
+        }
+    }
+
+    @include mq-max(576px) {
+        margin: 0 2.5rem;
+
+        img {
+            width: 50%;
+        }
+    }
+
+
+
+}
+
+// contacts
+.contact {
+    padding: 1rem 8rem;
+    padding-bottom: 5rem;
+    margin-top: -1rem;
+    background-color: #daedfb;
+    color: #0592f4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+
+    @include mq-max(576px) {
+        padding: 1rem 4rem;
+        padding-bottom: 5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+
+        @include mq-max(576px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    h4 {
+        font-size: 1.5rem;
+
+        @include mq-max(576px) {
+            font-size: 1rem;
+        }
+    }
+
+    .links {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+
+        @include mq-max(576px) {
+            width: 100%;
+        }
+
+
+        a {
+            text-decoration: none;
+
+            i {
+                color: #0592f4;
+                font-size: 3rem;
+
+                @include mq-max(576px) {
+                    font-size: 2rem;
+                }
+
+            }
+
+
+        }
+    }
+
 }

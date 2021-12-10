@@ -23,6 +23,14 @@ const data = [
     skills: ['SASS', 'JavaScript'],
     github: 'https://github.com/MRIDUL-MB/Swikipedia/',
   },
+  {
+    id: 4,
+    imageUrl: './assests/quiz.png',
+    link: 'https://quizzicalapp.netlify.app/',
+    title: 'Quiz App',
+    skills: ['SASS', 'React'],
+    github: 'https://github.com/MRIDUL-MB/quiz-app',
+  },
 ];
 
 export default data;
