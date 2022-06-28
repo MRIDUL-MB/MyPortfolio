@@ -11,6 +11,7 @@ export default function Banner() {
           </a>
           <a
             className='hire resume'
+            target='_blank'
             href='https://drive.google.com/file/d/1cFpkq0MGDjZXt9P72JlachE8hY7YKgfN/view?usp=sharing'
             download
           >
