@@ -6,11 +6,7 @@ export default function About() {
         things that live on the internet.
       </p>
       <br />
-      <p>
-        My journey to becoming a web developer started back in Sept 2019 during
-        my 2nd year. I am a BCA student who has decided to pursue a career as a
-        Web Developer. I am currently on the path to become a full-stack
-        developer.
+      <p>In my second year of BCA, I began my journey to become a web developer. In my current position, I am an MCA student interested in pursuing a career in web     development. As of right now, I am in the process of becoming a full-stack developer
       </p>
       <br />
       <p>
