@@ -13,6 +13,7 @@ export default function Banner() {
             className='hire resume'
             target='_blank'
             href='https://drive.google.com/file/d/1NfDg1YQw4IOx5xhHjeSXHk8suuWIzy9t/view?usp=sharing'
+            rel="noreferrer"
             download
           >
             Resume
