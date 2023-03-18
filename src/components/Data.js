@@ -5,7 +5,7 @@ const data = [
     link: 'http://onlinetool-kit.herokuapp.com/',
     title: 'OnlineTool-Kit',
     skills: ['SASS', 'JavaScript', 'FLASK'],
-    github: 'https://github.com/MRIDUL-MB/onlinetool-kit',
+    github: 'https://onlinetoolkit.onrender.com/',
   },
   {
     id: 2,
