@@ -31,6 +31,14 @@ const data = [
     skills: ['SASS', 'React'],
     github: 'https://github.com/MRIDUL-MB/quiz-app',
   },
+   {
+    id: 5,
+    imageUrl: '',
+    link: 'https://dsa-notes.web.app/',
+    title: 'DSA Note',
+    skills: ['SASS', 'React'],
+    github: 'https://github.com/MRIDUL-MB/dsa-note',
+  },
 ];
 
 export default data;
