@@ -33,7 +33,7 @@ const data = [
   },
    {
     id: 5,
-    imageUrl: '',
+    imageUrl: './assests/dsanotes.jpeg',
     link: 'https://dsa-notes.web.app/',
     title: 'DSA Note',
     skills: ['SASS', 'React'],
